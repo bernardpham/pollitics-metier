@@ -11,8 +11,7 @@
 	
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 
-	<bean id="utilisateurService" class="main.java.services.impl.UtilisateurServiceImpl"/>	
-	<bean id="utilisateurDao" class="main.java.services.dao.impl.UtilisateurDAO"/>
+   <import resource="classpath*:/applicationContext.xml" />
 
 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
 	    <property name="basename" value="message"/>
